@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7b653c3463.js" crossorigin="anonymous"></script>  <title>Dashboard</title>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2 class="logo">My Dashboard </h2>
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="#" class="nav-item"><i class="fas fa-chart-line"></i>  Analytics</a>
+        <a href="#" class="nav-item"><i class="fas fa-file-alt"></i> Reports</a>
+        <a href="#" class="nav-item"><i class="fas fa-cogs"></i> Settings</a>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="welcome-message">
+        <h1>Welcome Back!</h1>
+        <p>Here's an overview of your activity this week.</p>
+      </div>
+      <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+      <div class="user-info">
+        <p>Today: <span id="current-date"></span></p>
+      </div>
+      
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- KPI Cards -->
+      <section class="kpi-cards">
+        <div class="kpi-card">
+          <h3>Total Sales</h3>
+          <p>$85,000</p>
+        </div>
+        <div class="kpi-card">
+          <h3>New Customers</h3>
+          <p>256</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Orders Processed</h3>
+          <p>1,045</p>
+        </div>
+        <div class="kpi-card">
+          <h3>Pending Tasks</h3>
+          <p>12</p>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts">
+        <div class="chart">
+            <h3>Sales Overview</h3>
+            <div class="chart-placeholder">
+                <img src="images/sale-overview.png" alt="Sales Overview Image" style="width:100%; height:auto; border-radius: 5px;">
+            </div>
+        </div>
+        <div class="chart">
+            <h3>Performance Insights</h3>
+            <!-- Placeholder for Performance Insights -->
+            <div class="chart-placeholder">
+              <img src="images/sale-overview.png" alt="Sales Overview Image" style="width:100%; height:auto; border-radius: 5px;">
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 My Dashboard. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Automatically set the current date
+    document.getElementById("current-date").innerText = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
